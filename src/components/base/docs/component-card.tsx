@@ -7,7 +7,6 @@ import {
    Card,
    CardContent,
    CardDescription,
-   CardFooter,
    CardHeader,
    CardTitle,
 } from "@/components/ui/card"
@@ -46,7 +45,7 @@ export async function ComponentCard({ type, name, title }: CodeBlockProps) {
                   >
                      <Copy />
                   </CopyToClipboardButton>
-                  <CodeDialog code={code} />
+                  <CodeDialog code={code} title={title} />
                </div>
             </CardTitle>
             <CardDescription />
