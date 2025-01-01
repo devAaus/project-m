@@ -19,11 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth dark">
-      <body className={`${inter.className} antialiased bg-gradient-to-b from-background to-background/80 min-h-screen`}>
-        <Navbar />
-        <NextTopLoader showSpinner={false} />
-        <BackgroundGradient />
-        {children}
+      <body className={`${inter.className} antialiased bg-gradient-to-b from-background to-background/80 min-h-screen `}>
+        <div className='max-w-screen-2xl mx-auto'>
+          <Navbar />
+          <NextTopLoader showSpinner={false} />
+          <BackgroundGradient />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   )
