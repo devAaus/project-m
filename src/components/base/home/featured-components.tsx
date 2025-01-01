@@ -8,7 +8,7 @@ import { useRef } from "react"
 import { Slider } from "@/components/ui/slider"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
-import { BentoGrid, BentoGridItem } from "../ui/bento-grid"
+import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid"
 import {
    IconClipboardCopy,
    IconFileBroken,

@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { ArrowRight, Code, GithubIcon, Layers, Palette } from 'lucide-react'
 import Link from "next/link"
 import { useRef } from 'react'
-import { TypewriterEffectSmooth } from "../ui/typewriter-effect"
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect"
 
 export default function Hero() {
    const ref = useRef(null)

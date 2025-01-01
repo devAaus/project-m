@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/navbar'
-import BackgroundGradient from '@/components/background-gradient'
+import Navbar from '@/components/base/navbar'
+import BackgroundGradient from '@/components/base/background-gradient'
 import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] })
