@@ -7,14 +7,14 @@ import { usePathname } from 'next/navigation'
 
 const links = [
    { href: '/docs', label: 'Documentation' },
-   { href: '/components', label: 'Components' },
+   { href: '/docs/components', label: 'Components' },
 ]
 
 export default function Navbar() {
    const pathName = usePathname()
    return (
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-         <div className="container flex h-14 items-center px-4">
+         <div className="w-full flex h-14 items-center px-4">
             <div className="mr-4 flex">
                <Link className="mr-6 flex items-center space-x-2" href="/">
                   <span className=" font-bold inline-block">meshUI</span>

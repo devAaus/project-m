@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import BackgroundGradient from '@/components/background-gradient'
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth dark">
-      <body className={`${inter.className} antialiased bg-gradient-to-b from-background to-background/80 min-h-screen max-w-screen-2xl mx-auto`}>
+      <body className={`${inter.className} antialiased bg-gradient-to-b from-background to-background/80 min-h-screen`}>
         <Navbar />
+        <NextTopLoader showSpinner={false} />
         <BackgroundGradient />
         {children}
       </body>
