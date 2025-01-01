@@ -1,5 +1,5 @@
-import FAQs from "@/components/docs/faqs";
-import Introduction from "@/components/docs/introduction";
+import FAQs from "@/components/base/docs/faqs";
+import Introduction from "@/components/base/docs/introduction";
 
 
 export default function DocsPage() {
