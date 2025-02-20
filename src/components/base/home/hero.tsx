@@ -71,7 +71,7 @@ export default function Hero() {
                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                      </Button>
                   </Link>
-                  <Link href="/">
+                  <Link href="https://github.com/devAaus/project-m" target="_blank">
                      <Button size="lg" variant="outline" className="group">
                         <GithubIcon className="transition-transform group-hover:animate-pulse" />
                         GitHub

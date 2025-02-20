@@ -1,11 +1,10 @@
 "use client"
 
 import Link from 'next/link'
-import { Button } from "@/components/ui/button"
-import { Github } from 'lucide-react'
+import { GithubButton } from "@/components/ui/button"
 import { usePathname } from 'next/navigation'
 
-const links = [
+const navlinks = [
    { href: '/docs', label: 'Documentation' },
    { href: '/docs/components', label: 'Components' },
 ]
@@ -22,7 +21,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
                <nav className="flex items-center space-x-6 text-sm font-medium">
-                  {links.map(({ href, label }) => (
+                  {navlinks.map(({ href, label }) => (
                      <Link
                         key={href}
                         href={href}
@@ -36,10 +35,7 @@ export default function Navbar() {
                   ))}
                </nav>
                <div className="flex items-center space-x-2">
-                  <Button variant="ghost" size="icon" className='group'>
-                     <Github className="h-5 w-5 transition-transform group-hover:animate-pulse" />
-                     <span className="sr-only">GitHub</span>
-                  </Button>
+                  <GithubButton />
                </div>
             </div>
          </div>
