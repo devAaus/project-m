@@ -1,11 +1,11 @@
-import FeaturedComponents from "@/components/base/home/featured-components";
-import Hero from "@/components/base/home/hero";
+import { CoreFeatures, Hero, UpcomingBlocks } from '@/components/base/home/index'
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <FeaturedComponents />
+      <CoreFeatures />
+      <UpcomingBlocks />
     </main>
   );
 }

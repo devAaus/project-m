@@ -79,33 +79,6 @@ export default function Hero() {
                   </Link>
                </motion.div>
             </motion.div>
-
-            <motion.div
-               className="mt-20 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0"
-               initial={{ opacity: 0, y: 40 }}
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.7, delay: 0.8 }}
-            >
-               {[
-                  { icon: Palette, title: "Customizable", description: "Tailor components to fit your brand" },
-                  { icon: Layers, title: "Composable", description: "Build complex UIs from simple components" },
-                  { icon: Code, title: "Developer-friendly", description: "Easy to integrate and extend" },
-               ].map((feature, index) => (
-                  <motion.div
-                     key={feature.title}
-                     className="text-center"
-                     initial={{ opacity: 0, y: 20 }}
-                     animate={{ opacity: 1, y: 0 }}
-                     transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                  >
-                     <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                        <feature.icon className="h-10 w-10 text-primary" />
-                     </div>
-                     <h3 className="mt-4 text-lg font-semibold text-primary">{feature.title}</h3>
-                     <p className="mt-2 text-muted-foreground">{feature.description}</p>
-                  </motion.div>
-               ))}
-            </motion.div>
          </div>
       </section>
    )

@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/components/base/navbar'
 import BackgroundGradient from '@/components/base/background-gradient'
 import NextTopLoader from 'nextjs-toploader';
+import Footer from '@/components/base/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <NextTopLoader showSpinner={false} />
           <BackgroundGradient />
           <main>{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
