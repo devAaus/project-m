@@ -25,7 +25,7 @@ export default function RootLayout({
           <Navbar />
           <NextTopLoader showSpinner={false} />
           <BackgroundGradient />
-          <main>{children}</main>
+          <main className='min-h-screen'>{children}</main>
           <Footer />
         </div>
       </body>
